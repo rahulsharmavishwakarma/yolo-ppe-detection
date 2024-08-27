@@ -1,0 +1,22 @@
+# data.yaml
+path: /teamspace/studios/this_studio/ppe_dataset  # Path to your dataset root directory
+
+train: /teamspace/studios/this_studio/ppe_dataset/images/train  # Path to training images directory (relative to 'path')
+val: /teamspace/studios/this_studio/ppe_dataset/images/val     # Path to validation images directory (relative to 'path')
+
+# Number of classes
+nc: 10  # Change this to the number of classes in your dataset
+
+# Class names
+names:
+  0: person
+  1: hard-hat
+  2: gloves
+  3: mask
+  4: glasses
+  5: boots
+  6: vest
+  7: ppe-suit
+  8: ear-protector
+  9: safety-harness
+# yolo train model=yolov8n.pt data=/teamspace/studios/this_studio/data.yaml epochs=100 imgsz=640
